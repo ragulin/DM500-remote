@@ -1,0 +1,160 @@
+<!--
+From the original web interface
+<area shape="circle" coords="129, 54, 10" href="javascript:key(116)" alt="Power">
+
+<area shape="circle" coords="63, 123, 10" href="javascript:key(2)" alt="1">
+<area shape="circle" coords="109, 123, 10" href="javascript:key(3)" alt="2">
+<area shape="circle" coords="153, 123, 10" href="javascript:key(4)" alt="3">
+
+<area shape="circle" coords="63, 148, 10" href="javascript:key(5)" alt="4">
+<area shape="circle" coords="109, 148, 10" href="javascript:key(6)" alt="5">
+<area shape="circle" coords="153, 148, 10" href="javascript:key(7)" alt="6">
+
+<area shape="circle" coords="63, 173, 10" href="javascript:key(8)" alt="7">
+<area shape="circle" coords="109, 173, 10" href="javascript:key(9)" alt="8">
+<area shape="circle" coords="153, 173, 10" href="javascript:key(10)" alt="9">
+
+<area shape="circle" coords="63, 197, 10" href="javascript:key(158)" alt="previous">
+<area shape="circle" coords="109, 197, 10" href="javascript:key(11)" alt="0">
+<area shape="circle" coords="153, 197, 10" href="javascript:key(159)" alt="next">
+
+<area shape="circle" coords="54, 243, 15" href="javascript:key(115)" alt="volume up">
+<area shape="circle" coords="107, 233, 10" href="javascript:key(113)" alt="mute">
+<area shape="circle" coords="159, 243, 15" href="javascript:key(402)" alt="bouquet up">
+
+<area shape="circle" coords="66, 274, 15" href="javascript:key(114)" alt="volume down">
+<area shape="circle" coords="107, 258, 10" href="javascript:key(1)" alt="lame">
+<area shape="circle" coords="147, 274, 15" href="javascript:key(403)" alt="bouquet down">
+
+<area shape="circle" coords="48, 306, 10" href="javascript:key(358)" alt="info">
+<area shape="circle" coords="106, 310, 15" href="javascript:key(103)" alt="up">
+<area shape="circle" coords="167, 306, 10" href="javascript:key(141)" alt="dream">
+
+<area shape="circle" coords="70, 343, 15" href="javascript:key(105)" alt="left">
+<area shape="circle" coords="108, 340, 15" href="javascript:key(352)" alt="OK">
+<area shape="circle" coords="146, 343, 15" href="javascript:key(106)" alt="right">
+
+<area shape="circle" coords="53, 381, 10" href="javascript:key(392)" alt="audio">
+<area shape="circle" coords="106, 374, 15" href="javascript:key(108)" alt="down">
+<area shape="circle" coords="162, 381, 10" href="javascript:key(393)" alt="video">
+
+<area shape="circle" coords="56, 421, 10" href="javascript:key(398)" alt="red">
+<area shape="circle" coords="90, 422, 10" href="javascript:key(399)" alt="green">
+<area shape="circle" coords="123, 422, 10" href="javascript:key(400)" alt="yellow">
+<area shape="circle" coords="158, 421, 10" href="javascript:key(401)" alt="blue">
+
+<area shape="circle" coords="61, 460, 10" href="javascript:key(385)" alt="tv">
+<area shape="circle" coords="90, 461, 10" href="javascript:key(377)" alt="radio">
+<area shape="circle" coords="123, 461, 10" href="javascript:key(66)" alt="text">
+<area shape="circle" coords="153, 460, 10" href="javascript:key(138)" alt="help">
+-->
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>Remote</title> 
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  </head> 
+  <body> 
+
+    <div id="main" data-role="page">
+
+      <div data-role="header">
+        <h1 id="heading"><a href="#popup" data-rel="dialog" data-transition="pop">Remote</a></h1>
+      </div><!-- /header -->
+
+      <div data-role="content">
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="113">Mute</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="116">Power</button>
+          </div>
+        </div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="2">1</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="3">2</button>
+          </div>
+          <div class="ui-block-c">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="4">3</button>
+          </div>
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="5">4</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="6">5</button>
+          </div>
+          <div class="ui-block-c">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="7">6</button>
+          </div>
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="8">7</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="9">8</button>
+          </div>
+          <div class="ui-block-c">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="10">9</button>
+          </div>
+          <div class="ui-block-a">
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="11">0</button>
+          </div>
+          <div class="ui-block-c">
+          </div>
+        </div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="358">Info</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" data-icon="arrow-u" aria-disabled="false" data-btn="103">Up</button>
+          </div>
+          <div class="ui-block-c">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="141">Menu</button>
+          </div>
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden"  data-icon="minus" aria-disabled="false" data-btn="114">Vol down</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="352">Ok</button>
+          </div>
+          <div class="ui-block-c">
+            <button class="ui-btn-hidden" data-icon="plus"  data-iconpos="right" aria-disabled="false" data-btn="115">Vol up</button>
+          </div>
+          <div class="ui-block-a">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="392">Audio</button>
+          </div>
+          <div class="ui-block-b">
+            <button class="ui-btn-hidden" data-icon="arrow-d" aria-disabled="false" data-btn="108">Down</button>
+          </div>
+          <div class="ui-block-c">
+            <button class="ui-btn-hidden" aria-disabled="false" data-btn="1">Exit</button>
+          </div>
+        </div>
+      </div><!-- /content -->
+
+
+    </div><!-- /Page -->
+
+    <div id="popup" data-role="dialog">
+      <div data-role="header">
+        <h1>Dreambox</h1>
+      </div>
+      <div data-role="content">
+        <label for="host">Host:</label>
+        <input type="text" name="name" id="host" value="http://" />
+        <a href="index.html" data-role="button" id="save-host">OK</a>
+      </div>
+    </div>
+    <script src="remote.js"></script>
+  </html>
+</body>
